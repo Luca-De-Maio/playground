@@ -20,7 +20,7 @@ public class AuthentificationTest extends BaseTest {
     @Test
     public void facebookAuthentification() {
         LoginPage loginPage = openLoginPage(driver);
-        loginPage.login("a1s2dcld6", "cfnfjdls");
+        loginPage.login("a1s2d1cld6", "cfnfjdls");
         Assert.assertEquals(driver.getCurrentUrl(),
                 "https://web.facebook.com/?_rdc=1&_rdr", "failed authentidication was expected!");
         Assert.assertTrue(loginPage.wasLogInFailed(), "warning was expected!");
